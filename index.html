@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+          <div class="head">
+            <div class="head-links-block">
+              <div class="head-links-left-block">
+                <div class="link-left active-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="link-left">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="link-left">
+                    <a href="code.html">Code</a>
+                </div>
+
+                <div class="link-left">
+                    <a href="salt.html">&#60;/SALT&#62;</a>
+                </div>
+              </div>
+
+              <div class="link-right">
+                  <a href="miscellaneous.html" class="button">
+                    MISCELLANEOUS
+                  </a>
+                </div>
+              </div>
+            </div>
+
+        <div class="torso">
+          <div class="img-block">
+            <div class="img-solo">
+              <div class="img-background" style="background-image:url(images/dryroad.jpg)"></div>
+                <div class="img-text-box">
+                  <div class="img-text">
+                    <a HREF="about.html" class="hoverColor">Remember the lessons, don't crash and burn</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="img-solo">
+              <div class="img-background" style="background-image:url(images/rio.jpg)"></div>
+                <div class="img-text-box">
+                  <div class="img-text">
+                    <a HREF="code.html" class="hoverColor">A couple of coding challenges explained</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="img-solo">
+              <div class="img-background" style="background-image:url(images/stenar.jpg)"></div>
+                <div class="img-text-box">
+                  <div class="img-text">
+                    <a HREF="salt.html" class="hoverColor">To the School of Applied Technology</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+
+          <div class="bottom-content-block">
+              <a href="mailto:counterphish@protonmail.com" class="contact">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                &diams;  counterphish@protonmail.com  &diams;
+              </a>
+            </div>
+          </div>
+
+      </body>
+
+    <script type="text/javascript">const imgBlockItems = document.querySelectorAll('.img-solo')
+
+    imgBlockItems.forEach(imgBlockItem => {
+      imgBlockItem.addEventListener('mouseover', () => {
+        console.log(imgBlockItem.childNodes[1].classList);
+        imgBlockItem.childNodes[1].classList.add('darken-img');
+      })
+
+      imgBlockItem.addEventListener('mouseout', () => {
+        imgBlockItem.childNodes[1].classList.remove('darken-img');
+      })
+
+    })
+    </script>
+</html>
